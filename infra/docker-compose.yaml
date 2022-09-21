@@ -10,7 +10,7 @@ services:
       - ./.env
 
   web:
-    build: ../api_yamdb
+    image: medveed/yambd
     restart: always
     volumes:
       - static_value:/app/static/
@@ -39,4 +39,3 @@ services:
 volumes:
   static_value:
   media_value:
-
