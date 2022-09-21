@@ -103,7 +103,7 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
-def SignupUser(request):
+def Signupuser(request):
     serializer = SignupUserSerializer(data=request.data)
     serializer.is_valid(raise_exception=True)
     email = serializer.validated_data['email']
@@ -127,7 +127,7 @@ def SignupUser(request):
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
-def TokenUser(request):
+def Tokenuser(request):
     serializer = TokenUserSerializer(data=request.data)
     serializer.is_valid(raise_exception=True)
     username = serializer.validated_data['username']
