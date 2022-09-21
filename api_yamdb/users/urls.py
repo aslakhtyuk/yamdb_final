@@ -1,7 +1,7 @@
-from api.views import SignupUser, TokenUser
+from api.views import signup_user, token_user
 from django.urls import path
 
 urlpatterns = [
-    path('signup/', SignupUser),
-    path('token/', TokenUser),
+    path('signup/', signup_user),
+    path('token/', token_user),
 ]
