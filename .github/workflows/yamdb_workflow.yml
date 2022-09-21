@@ -35,7 +35,7 @@ jobs:
         # запуск проверки проекта по flake8
         python -m flake8
         # запустить написанные разработчиком тесты
-        cd tests/
+        cd api_yamdb/
         # запустить написанные разработчиком тесты
         python manage.py test_docker_compose
         python manage.py test_readme
