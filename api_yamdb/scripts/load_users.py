@@ -1,6 +1,7 @@
-from django.contrib.auth import get_user_model
 # python3 manage.py runscript scripts.{file_name}
 import csv
+
+from django.contrib.auth import get_user_model
 
 User = get_user_model()
 

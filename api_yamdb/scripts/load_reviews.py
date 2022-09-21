@@ -1,9 +1,9 @@
-from django.contrib.auth import get_user_model
 # python3 manage.py runscript scripts.{file_name}
 import csv
 
 from actions.models import Review, Title
 from api.exceptions import UserNotFoundError
+from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
